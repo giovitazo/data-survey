@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIVE ME YOUR DATA SURVEY</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">GIVE ME YOUR DATA SURVEY</h1>
+    <main>
+      <p id="description">
+        This is a survey in which the owners of this site (from now on referred
+        as "we") request your voluntarily submitted data which we may use, store
+        and process obeying data laws and regulations.
+      </p>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Please, insert your information</legend>
+          <label for="name" id="name-label"
+            >Insert your name:
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Insert your name"
+              required
+          /></label>
+          <label for="email" id="email-label"
+            >Insert your e-mail:
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Insert your e-mail"
+              required
+          /></label>
+          <label for="number" id="number-label"
+            >Insert your rating:
+            <input
+              type="number"
+              id="number"
+              name="number"
+              min="0"
+              max="10"
+              placeholder="Insert your rating from 0 to 10"
+          /></label>
+          <select name="gender" id="dropdown">
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>What is your dominant hand?</legend>
+          <label class="radio-label" for="right-hand"
+            ><input
+              type="radio"
+              id="right-hand"
+              value="right-hand"
+              name="writing-hand"
+            />Right hand</label
+          >
+          <label class="radio-label" for="left-hand"
+            ><input
+              type="radio"
+              id="left-hand"
+              value="left-hand"
+              name="writing-hand"
+            />Left hand</label
+          >
+          <label class="radio-label" for="both-hand">
+            <input
+              type="radio"
+              id="both-hand"
+              value="both-hand"
+              name="writing-hand"
+            />Both hands</label
+          >
+          <label class="radio-label" for="no-hand">
+            <input
+              type="radio"
+              id="no-hand"
+              value="no-hand"
+              name="writing-hand"
+            />Not applicable</label
+          >
+        </fieldset>
+        <fieldset>
+          <legend>Bio section</legend>
+          <label for="bio"
+            >Biography<textarea
+              name="bio"
+              id="bio"
+              cols="30"
+              rows="10"
+              placeholder="Tell us about yourself"
+            ></textarea>
+          </label>
+        </fieldset>
+        <label for="terms"
+          ><input type="checkbox" id="terms" name="terms" value="1" />I have
+          read the terms and conditions</label
+        >
+        <label for="18-or-more"
+          ><input
+            type="checkbox"
+            id="18-or-more"
+            name="18-or-more"
+            value="1"
+          />I am 18 years or older</label
+        >
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </main>
+  </body>
+</html>
